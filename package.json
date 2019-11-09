@@ -1,16 +1,15 @@
 {
   "name": "sarduk-awesome-greeter",
-  "version": "1.0.0",
-   "description": "A nice greeter",
-   "main": "lib/index.js",
-   "types": "lib/index.d.ts",
-
+  "version": "1.0.1",
+  "description": "A nice greeter",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare" : "npm run build",
+    "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -20,9 +19,11 @@
     "type": "git",
     "url": "git+https://github.com/sarduk/sarduk-awesome-greeter.git"
   },
-   "keywords": ["Hello", "Greeter"],
-   "author": "C-J",
-
+  "keywords": [
+    "Hello",
+    "Greeter"
+  ],
+  "author": "C-J",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sarduk/sarduk-awesome-greeter/issues"
